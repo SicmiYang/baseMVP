@@ -1,7 +1,6 @@
 package com.nfyg.mymvp.activity;
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.nfyg.mymvp.BaseActivity;
 import com.nfyg.mymvp.R;
@@ -18,8 +17,6 @@ public class MainActivity extends BaseActivity<MainController> implements MainVi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//        initController();
     }
 
     @Override
@@ -38,8 +35,4 @@ public class MainActivity extends BaseActivity<MainController> implements MainVi
         ,new MainPresenter(this));
     }
 
-    @Override
-    public <T extends View> T findView(int ResId) {
-        return (T) findViewById(ResId);
-    }
 }

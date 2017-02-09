@@ -19,14 +19,14 @@ public class MainController extends BaseController<MainView,MainPresenter>{
 
     @Override
     public void bindVu() {
-        getView(R.id.text).setOnClickListener(this);
+        getView(R.id.btn).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
 
         switch (v.getId()){
-            case R.id.text:
+            case R.id.btn:
                 mPresenter.ondo();
         }
 
